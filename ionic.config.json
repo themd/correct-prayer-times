@@ -1,5 +1,6 @@
 {
-  "name": "vaktija",
-  "app_id": "",
-  "type": "ionic-angular"
+    "name": "vaktija",
+    "app_id": "",
+    "type": "ionic-angular",
+    "integrations": {}
 }
