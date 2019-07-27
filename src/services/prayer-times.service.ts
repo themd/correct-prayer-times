@@ -15,6 +15,7 @@ export class PrayerTimes {
     constructor(private http: Http) {}
 
     fetchPrayerTimes(longitude?: string, latitude?: string, month?: number) {
-        this.http.get(CORS+PRAYER_URL).take(1).subscribe(res=>this._prayerTimeSubject$.next(res.json()))
+//         this.http.get(CORS+PRAYER_URL).take(1).subscribe(res=>this._prayerTimeSubject$.next(res.json()))
+        this.http.get(CORS+PRAYER_URL).subscribe(res=>this._prayerTimeSubject$.next(res.json()))
     }
 }
